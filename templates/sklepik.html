@@ -5,14 +5,17 @@
     <div class="content">
         {% for product in products %}
             <div class="product">
-                <p><b>#{{ product.id }}</b></p>
+                <div class="square"></div>>
+                <div class="opis_ptaka">
+                <p><b>#{{ product.title }}</b></p>
                 <b>
-                    <p class="title">{{ product.title }}</p>
+                    <p class="title">{{ product.title_latin }}</p>
                 </b>
                 <p>{{ product.type }}</p>
                 <div class="bio">
                     <h4>Bio</h4>
-                    <p>{{ product.bio }}</p>
+                    <p>{{ product.bio_fact }}</p>
+                </div>
                 </div>
             </div>
         {% endfor %}
