@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <span class="title">
+        <h1>{% block title %} {{ product.type_title }} {% endblock %}</h1>
+    </span>
+    <div class="product">
+      <div class="square"></div>>
+
+              <div class="opis_ptaka">
+                <b>
+                    <p class="name">{{ product.type_title }} </p>
+                </b>
+                <p>{{ product.type }}</p>
+                <p>{{ product.price }} </p>
+                <div class="bio">
+                    <h4>Bio</h4>
+                    <p>{{ product.bio_info }}</p>
+                </div>
+              </div>   
+    </div>
+{% endblock %}

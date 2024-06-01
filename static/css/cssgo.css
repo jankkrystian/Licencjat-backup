@@ -1,0 +1,290 @@
+body {
+    background-color: #f6f3eb !important;
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.navbar {
+
+    background-color: #e6b2b2;
+    color: aliceblue;
+    font-size: medium;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    padding: 5% !important;
+    justify-content: center;
+}
+.navbar a:hover {
+    background-color: #f1dbdb;
+}
+
+.navbar a {
+    color:#f6f0ea;
+    text-decoration: none !important;
+    
+}
+
+a {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-decoration: none;
+    color: aliceblue;
+    
+    font-size: 18px;
+
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.baner {
+ 
+    height: 300px;
+    width: 100%;
+    background-color: #c5cfb3;
+
+}
+.omnie {
+    display: flex;
+    justify-content: space-around;
+}
+.foto {
+    width: 40%;
+    height: 100%;
+    background-image: url("avatar.png") !important;
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+}
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: #bbc9db;
+    padding: 5%;
+
+}
+.info {
+    background-color: #fdfaf6;width: 60%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+
+    padding-right: 10%;
+
+    font-size: 17px;
+}
+.row {
+    padding: 5%;
+}
+.subbutton {
+    background-color: #8784e1;
+    border: none;
+    padding: 15px;
+    margin-left: 70%;
+    color: aliceblue;
+}
+.subbutton:hover {
+    background-color: #bfbef1;
+}
+
+.atlas {
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.fotoptak1, .fotoptak2 {
+    background-image: ('kos.png') !important;
+    height: 100%;
+    width: 40%;
+ 
+}
+
+.fotoptak3 {
+    background-color: #bbc9db;
+    width: 60%;
+    height: 100%;
+}
+.infoptak1, .infoptak2 {
+    width: 60%;
+    height: 100%;
+    background-color: #fdfaf6;
+    padding: 5%;
+
+}
+.card {
+    background-color: #fdfaf6 !important;
+    padding: 5%;
+    border-style: none !important;
+}
+
+.element {
+    display: flex;
+    flex-direction: row;
+}
+
+.fotoelement {
+    width: 50vw; /* Szerokość elementu */
+    height: 40vh;
+    padding-bottom: 60%; /* Wysokość elementu będzie 60% jego szerokości */
+    background-image: url("kolczyki1.jpg"); /* Ścieżka do obrazka */
+    background-size: cover; /* Dopasowanie obrazka do wielkości elementu */
+    background-position: center; /* Pozycjonowanie obrazka na środku */
+    position: relative; /* Konieczne do pozycjonowania przycisku na obrazku */
+}
+
+.galeriapod {
+    display: flex;
+    flex-direction: row;
+}
+
+.infoelement {
+    width: 50vw;
+
+    padding: 5%;
+}
+
+.zamow {
+    display: flex;
+    justify-content: center;
+    background-color:  #bbc9db;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 5%;
+}
+
+/* Dla dużych ekranów */
+@media only screen and (min-width: 2000px) {
+    .infoelement {
+        font-size: 4em;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    a {
+        font-size: 4em;
+    }
+}
+
+/* Dla dużych ekranów */
+@media only screen and (min-width: 2000px) {
+    .infoptak1, .infoptak2, .infoptak1 a {
+        font-size: 4em;
+    }
+}
+
+
+@media only screen and (min-width: 2000px) {
+    .info {
+        font-size: 4em;
+    }
+}
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.main-image {
+    width: 700px;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnails img {
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    object-fit: cover;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.thumbnails img:hover {
+    border: 2px solid #007bff;
+}
+.pole {
+    display: flex;
+    flex-direction: row;
+}
+.info {
+    background-color: #007bff;
+}
+.square {
+
+    width: 100px;
+    height: 100px;
+    background-color: #8784e1;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    margin: 5px;
+}
+
+.content {
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 20%;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f3f3f3;
+    inline-size: 100%;
+}
+.opis_ptaka {
+    flex-basis: 50%;
+}
+
+.bio {
+    padding: 10px;
+    margin: 5px;
+    background-color: #ffffff;
+    color: #004835;
+}
+
+.title a {
+    color: #00a36f;
+    text-decoration: none;
+}
+
+nav a {
+    color: #d64161;
+    font-size: 3em;
+    margin-left: 50px;
+    text-decoration: none; 
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #2cbac1;
+}
