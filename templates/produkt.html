@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <span class="title">
-        <h1>{% block title %} {{ product.type_title }} {% endblock %}</h1>
-    </span>
+
+    <div class="navbar">
+      <a href="C:\Users\pat\Desktop\Licencjat\index.html" style="text-decoration:none">home</a>
+      <a href="C:\Users\pat\Desktop\Licencjat\sklepik.html" style="text-decoration:none">sklepik</a>
+      <a href="C:\Users\pat\Desktop\Licencjat\zamowienia.html" style="text-decoration:none">zamówienia</a>
+    </div>
     <div class="product">
-      <div class="square"></div>>
+      <<div class="square"></div>>>
 
               <div class="opis_ptaka">
                 <b>
@@ -18,5 +21,26 @@
                     <p>{{ product.bio_info }}</p>
                 </div>
               </div>   
+    </div>
+    <div class="newsletter">
+      <h3 class="newstext">Zapisz się do newslettera!</h3>
+      <div class="form">
+        <label for="email-newsletter-component" class="visually-hidden">Adres Email</label>
+        <input type="email" class="form-control bsb-form-control-3xl" id="email-newsletter-component" value="" placeholder="Email Address" aria-label="email-newsletter-component" aria-describedby="email-newsletter-help" required>
+        <div id="email-newsletter-help" class="form-text text-center text-lg-start">Będziesz mieć dostęp do informacji o produktach i wyjatkowych ptasich ciekawostek.</div>
+      </div>
+      <div class="button">
+        <button type="submit" class="subbutton" id="subscribeButton">Wyślij</button>
+      </div>
+    </div>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">PGoldys 2024</p>
+    
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        
+      </footer>
     </div>
 {% endblock %}

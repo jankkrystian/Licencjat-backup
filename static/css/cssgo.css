@@ -54,10 +54,9 @@ a {
 .omnie {
     display: flex;
     justify-content: space-around;
+    padding: 10%;
 }
 .foto {
-    width: 40%;
-    height: 100%;
     background-image: url("avatar.png") !important;
     background-size: contain, cover;
     background-repeat: no-repeat;
@@ -231,8 +230,7 @@ a {
 }
 .square {
 
-    width: 100px;
-    height: 100px;
+    
     background-color: #8784e1;
 }
 .content {
@@ -287,4 +285,27 @@ nav a {
     width: 200px;
     height: 200px;
     background-color: #2cbac1;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    background-color:#ffffff; 
+}
+.box_smaller {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+}
+.spis {
+    margin-top: 15%;
+}
+
+.spis a {
+    font-style: italic;
+}
+.title p {
+    font-style: italic;
+}
+h6 {
+    font-size: 22px;
 }

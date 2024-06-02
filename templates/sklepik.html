@@ -1,13 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1 class="title">{% block title %} Students {% endblock %}</h1>
+
+    <div class="navbar">
+        <a href="C:\Users\pat\Desktop\Licencjat\index.html" style="text-decoration:none">home</a>
+        <a href="C:\Users\pat\Desktop\Licencjat\sklepik.html" style="text-decoration:none">sklepik</a>
+        <a href="C:\Users\pat\Desktop\Licencjat\zamowienia.html" style="text-decoration:none">zamówienia</a>
+      </div>
     <div class="content">
         {% for product in products %}
             <div class="product">
                 <div class="square"></div>>
                 <div class="opis_ptaka">
-                <p><b>#{{ product.title }}</b></p>
+                <p><b>{{ product.title }}</b></p>
                 <b>
                     <p class="title">{{ product.title_latin }}</p>
                 </b>
@@ -20,4 +25,14 @@
             </div>
         {% endfor %}
     </div>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">PGoldys 2024</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          
+        </footer>
+      </div>
 {% endblock %}
