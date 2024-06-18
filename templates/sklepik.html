@@ -2,21 +2,28 @@
 
 {% block content %}
 
-    <div class="navbar">
-        <a href="C:\Users\pat\Desktop\Licencjat\index.html" style="text-decoration:none">home</a>
-        <a href="C:\Users\pat\Desktop\Licencjat\sklepik.html" style="text-decoration:none">sklepik</a>
-        <a href="C:\Users\pat\Desktop\Licencjat\zamowienia.html" style="text-decoration:none">zamówienia</a>
-      </div>
+  
     <div class="content">
+        <div class="navbar">
+            <a href="..\" style="text-decoration:none">home</a>
+            <a href="..\sklepik" style="text-decoration:none">sklepik</a>
+            <a href="..\adnotacja" style="text-decoration:none">adnotacja</a>
+          </div>
         {% for product in products %}
+        <h6>Kliknij w zdjęcie, aby zakupić!</h6>
             <div class="product">
-                <div class="square"></div>>
+            <a href="..\produkt\{{ product.id }}">
+                <img src=" {{ product.image }} ">
+            </a>
                 <div class="opis_ptaka">
                 <p><b>{{ product.title }}</b></p>
                 <b>
                     <p class="title">{{ product.title_latin }}</p>
                 </b>
                 <p>{{ product.size }}</p>
+
+
+
                 <div class="bio">
                     <h4>Bio</h4>
                     <p>{{ product.bio_fact }}</p>

@@ -2,37 +2,67 @@
 
 {% block content %}
 
-    <div class="navbar">
-      <a href="C:\Users\pat\Desktop\Licencjat\index.html" style="text-decoration:none">home</a>
-      <a href="C:\Users\pat\Desktop\Licencjat\sklepik.html" style="text-decoration:none">sklepik</a>
-      <a href="C:\Users\pat\Desktop\Licencjat\zamowienia.html" style="text-decoration:none">zamówienia</a>
-    </div>
-    <div class="product">
-      <<div class="square"></div>>>
+<div class="navbar">
+  <a href="..\" style="text-decoration:none">home</a>
+  <a href="..\sklepik" style="text-decoration:none">sklepik</a>
+  <a href="..\adnotacja" style="text-decoration:none">adnotacja</a>
+</div>
+<div class="product">
+  <div class="image-gallery">
+    <img src="..\{{ product.image }} " alt="Zdjęcie produktu" class="main-image">
+    <!-- <div class="thumbnail-container">
+      <img class="thumbnail" src="../images/kolczyki2.jpg" alt="Kolczyki 2">
+      <img class="thumbnail" src="../images/kolczyki3.png" alt="Kolczyki 3">
+    </div> -->
+  </div>
 
-              <div class="opis_ptaka">
-                <b>
-                    <p class="name">{{ product.type_title }} </p>
-                </b>
-                <p>{{ product.type }}</p>
-                <p>{{ product.price }} </p>
-                <div class="bio">
-                    <h4>Bio</h4>
-                    <p>{{ product.bio_info }}</p>
-                </div>
-              </div>   
+  <div class="opis_ptaka">
+    <b>
+      <p class="name">{{ product.type_title }}</p>
+    </b>
+    <p>Typ produktu: {{ product.type }}</p>
+    <p>Cena: {{ product.price }}</p>
+    <button style="padding: 2%;
+    background-color: #8784e1;
+    color: #ffffff;
+    border-style: none;" id="button" onClick="playPause()">
+  <audio
+    src="..\XC859856 - Galah - Eolophus roseicapilla.mp3"
+    autoplay
+    loop
+  ></audio>
+  Dźwięk
+</button>
+
+<script>
+  var aud = document.getElementById("button").children[0];
+  var isPlaying = false;
+  aud.pause();
+
+  function playPause() {
+    if (isPlaying) {
+      aud.pause();
+    } else {
+      aud.play();
+    }
+    isPlaying = !isPlaying;
+  }
+</script>
+    <div class="bio">
+      <h4>Informacje szczegółowe:</h4>
+      <p>{{ product.bio_info }}</p>
     </div>
-    <div class="newsletter">
-      <h3 class="newstext">Zapisz się do newslettera!</h3>
-      <div class="form">
-        <label for="email-newsletter-component" class="visually-hidden">Adres Email</label>
-        <input type="email" class="form-control bsb-form-control-3xl" id="email-newsletter-component" value="" placeholder="Email Address" aria-label="email-newsletter-component" aria-describedby="email-newsletter-help" required>
-        <div id="email-newsletter-help" class="form-text text-center text-lg-start">Będziesz mieć dostęp do informacji o produktach i wyjatkowych ptasich ciekawostek.</div>
-      </div>
-      <div class="button">
-        <button type="submit" class="subbutton" id="subscribeButton">Wyślij</button>
-      </div>
-    </div>
+  </div>
+</div>
+        <div class="form_order">
+    <form action="mailto:patrycja.goldys@gmail.com" method="post" enctype="text/plain">
+        <h6>Złóż zamówienie poprzez formularz</h6>
+        <p>Poniżej znajduje się formularz zakupu. Podaj nazwę produktu i szczegółową wiadomość, zaloguj się na swoją skrzynkę mailową i poczekaj na informację zwrotną.</p>
+        Nazwa produktu:<br><input type="text" name="Nazwa produktu: "> <br>
+        Wiadomość:<br><input style="padding: 10%" type="text" name="Uwaga do zamowienia: "><br>
+        <input style="background-color:#8784e1; padding: 3%; border-style: none" type="submit" value="Wyślij">
+     </form>
+     </div>
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-muted">PGoldys 2024</p>
@@ -43,4 +73,5 @@
         
       </footer>
     </div>
+    <script src="script.js"></script>
 {% endblock %}

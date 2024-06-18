@@ -1,11 +1,19 @@
 body {
     background-color: #f6f3eb !important;
     display: grid;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     padding-left: 10%;
     padding-right: 10%;
 
+}
+
+img {
+    float: left;
+    width:  70vh;
+    height: 50vh;
+    object-fit: cover;
+    margin-right: 3%;
 }
 
 .navbar {
@@ -18,15 +26,10 @@ body {
     padding: 5% !important;
     justify-content: center;
 }
-.navbar a:hover {
+.nav a:hover {
     background-color: #f1dbdb;
 }
 
-.navbar a {
-    color:#f6f0ea;
-    text-decoration: none !important;
-    
-}
 
 a {
     padding-left: 10%;
@@ -61,6 +64,13 @@ a {
     background-size: contain, cover;
     background-repeat: no-repeat;
 }
+.avatar {
+    width: 40vw;
+    height: 40vw;
+    display: flex;
+    margin: 5%;
+}
+
 .newsletter {
     display: flex;
     flex-direction: column;
@@ -263,10 +273,21 @@ a {
 }
 
 .bio {
-    padding: 10px;
-    margin: 5px;
+    margin-top: 20%;
     background-color: #ffffff;
     color: #004835;
+    padding: 5%;
+}
+
+.opis_sound {
+    display: flex;
+    flex-direction: row;
+}
+
+.opis_bio {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .title a {
@@ -275,8 +296,8 @@ a {
 }
 
 nav a {
-    color: #d64161;
-    font-size: 3em;
+    color: #ffffff;
+    font-size: 2vw;
     margin-left: 50px;
     text-decoration: none; 
 }
@@ -289,23 +310,70 @@ nav a {
 .box {
     display: flex;
     flex-direction: row;
-    background-color:#ffffff; 
+    background-color: #f2f2f2;
 }
 .box_smaller {
     display: flex;
     flex-direction: column;
-    flex-basis: 30%;
+    flex-basis: 50%;
 }
 .spis {
-    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 .spis a {
+    color: black;
     font-style: italic;
+    font-size: 24px;
 }
 .title p {
     font-style: italic;
 }
 h6 {
     font-size: 22px;
+}
+.nav {
+    background-color: #e6b2b2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 3%;
+}
+.button {
+    padding: 2%;
+    background-color: #8784e1;
+    color: #ffffff;
+    border-style: none;
+}
+.form_order {
+    display: flex;
+    color: #ffffff;
+    background-color: #c5cfb3;
+    padding: 5%;
+}
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    width: 100%;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.thumbnail {
+    width: 25vh;
+    height: 25vh;
+    margin: 0 10px;
+    cursor: pointer;
 }
